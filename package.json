@@ -1,6 +1,6 @@
 {
   "name": "@zoroaster/deep-equal",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "The Deep Equal Assertion With Color.",
   "main": "build/index.js",
   "module": "src/index.js",
