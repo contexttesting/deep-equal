@@ -31,7 +31,11 @@
   },
   "keywords": [
     "deep-equal",
-    "zoroaster"
+    "zoroaster",
+    "assert",
+    "color",
+    "difference",
+    "diff"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
