@@ -10,16 +10,25 @@ import deepEqual from '@zoroaster/deep-equal'
 
 ```## deepEqual
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["actual", "?"],
+  ["expected", "?"],
+  ["message?", "string|!Error"]
 ]
 ```
 
-Call this function to get the result you want.
-
-%TYPEDEF types/index.xml%
+Calls `assert.deepStrictEqual` and then creates a visual representation of the difference between objects if it throws.
 
 %EXAMPLE: example, ../src => @zoroaster/deep-equal%
+
+<table>
+<table>
+<tr><td>
+
 %FORK example%
+</td></tr><tr><td>
+
+![Deep Equal With Color](doc/doc.png)
+</td></tr>
+</table>
 
 %~%
