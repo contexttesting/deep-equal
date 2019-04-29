@@ -1,0 +1,3 @@
+'test' deepStrictEqual 'not-test'
+[31m- not-test[0m
+[32m+ test[0m

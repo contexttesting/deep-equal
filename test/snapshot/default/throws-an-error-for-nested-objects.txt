@@ -1,0 +1,8 @@
+{ obj: 'world', test: { world: 20 } } deepStrictEqual { obj: 'hello', test: { world: 10 } }
+  obj
+  [31m- hello[0m
+  [32m+ world[0m
+  test
+    world
+    [31m- 10[0m
+    [32m+ 20[0m

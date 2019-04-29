@@ -1,26 +1,19 @@
-import { debuglog } from 'util'
-
-const LOG = debuglog('@zoroaster/deep-equal')
+import { deepStrictEqual } from 'assert'
+import differently from 'differently'
 
 /**
  * The Deep Equal Assertion With Color.
- * @param {Config} [config] Options for the program.
- * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
- * @param {string} config.text A text to return.
+ * @param {?} actual
+ * @param {?} expected
+ * @param {string|!Error} message
  */
-export default async function deepEqual(config = {}) {
-  const {
-    shouldRun = true,
-    text,
-  } = config
-  if (!shouldRun) return
-  LOG('@zoroaster/deep-equal called with %s', text)
-  return text
+export default function deepEqual(actual, expected, message) {
+  try {
+    deepStrictEqual(actual, expected, message)
+  } catch (err) {
+    const s = differently(expected, actual)
+    err.message = [err.message, s].filter(Boolean).join('\n')
+    throw err
+  }
 }
 
-/* documentary types/index.xml */
-/**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
- */
