@@ -12,7 +12,7 @@ import deepEqual from '@zoroaster/deep-equal'
 [
   ["actual", "?"],
   ["expected", "?"],
-  ["message?", "string|!Error"]
+  ["message?", "string"]
 ]
 ```
 

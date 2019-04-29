@@ -5,14 +5,14 @@
 `@zoroaster/deep-equal` is The Deep Equal Assertion With Color.
 
 ```sh
-yarn add -E @zoroaster/deep-equal
+yarn add @zoroaster/deep-equal
 ```
 
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`deepEqual(actual: ?, expected: ?, message?: string|!Error)`](#deepequalactual-expected-message-stringerror-void)
+- [`deepEqual(actual: ?, expected: ?, message?: string)`](#deepequalactual-expected-message-string-void)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -27,7 +27,7 @@ import deepEqual from '@zoroaster/deep-equal'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `deepEqual(`<br/>&nbsp;&nbsp;`actual: ?,`<br/>&nbsp;&nbsp;`expected: ?,`<br/>&nbsp;&nbsp;`message?: string|!Error,`<br/>`): void`
+## `deepEqual(`<br/>&nbsp;&nbsp;`actual: ?,`<br/>&nbsp;&nbsp;`expected: ?,`<br/>&nbsp;&nbsp;`message?: string,`<br/>`): void`
 
 Calls `assert.deepStrictEqual` and then creates a visual representation of the difference between objects if it throws.
 

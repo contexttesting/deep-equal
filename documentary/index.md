@@ -5,7 +5,7 @@
 `@zoroaster/deep-equal` is The Deep Equal Assertion With Color.
 
 ```sh
-yarn add -E @zoroaster/deep-equal
+yarn add @zoroaster/deep-equal
 ```
 
 ## Table Of Contents

@@ -5,7 +5,7 @@ import differently from 'differently'
  * The Deep Equal Assertion With Color.
  * @param {?} actual
  * @param {?} expected
- * @param {string|!Error} message
+ * @param {string} [message]
  */
 export default function deepEqual(actual, expected, message) {
   try {
